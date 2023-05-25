@@ -9,7 +9,7 @@
   get_url:
     url: https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
     dest: /usr/share/keyrings/brave-browser-archive-keyring.gpg
-    tags:
+  tags:
     - brave
     - install
 - name: Brave Browser PPA setting
