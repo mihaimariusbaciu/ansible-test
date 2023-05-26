@@ -12,20 +12,21 @@
   tags:
     - brave
     - install
+- name: Brave Browser PPA setting
+  become: true
+  shell: echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"| tee /etc/apt/sources.list.d/brave-browser-release.list" 
+  tags:
+    - brave
+    - install
+
 # - name: Brave Browser PPA setting
-#   become: true
-#   shell: echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"| tee /etc/apt/sources.list.d/brave-browser-release.list" | tee /etc/apt/sources.list.d/brave-browser-release.list"
+#   apt_repository:
+#     repo: deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main
+#     filename: brave-browser-release
 #   tags:
 #     - brave
 #     - install
 
-- name: Brave Browser PPA setting
-  apt_repository:
-    repo: deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main
-    filename: brave-browser-release
-  tags:
-    - brave
-    - install
 - name: Brave Browser apt installation
   become: true
   apt:
