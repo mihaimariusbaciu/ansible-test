@@ -1,5 +1,7 @@
 - name: Remove neovim
-  shell: rm -rf ~/neovim
+  ansbile.builtin.file: rm -rf ~/neovim
+    path: ~/.local/src/neovim
+    state: absent
   tags:
     - install
     - neovim
