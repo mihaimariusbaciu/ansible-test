@@ -1,5 +1,5 @@
 - name: Remove neovim
-  ansibile.builtin.file:
+  ansible.builtin.file:
     path: "{{ lookup('env', 'HOME') }}/.local/src/neovim"
     state: absent
   tags:
