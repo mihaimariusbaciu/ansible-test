@@ -1,6 +1,6 @@
 - name: Remove neovim
   ansbile.builtin.file: rm -rf ~/neovim
-    path: ~/.local/src/neovim
+    path: "{{ lookup('env', 'HOME') }}/.local/src/neovim"
     state: absent
   tags:
     - install
