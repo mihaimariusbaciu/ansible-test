@@ -18,9 +18,10 @@
     - import_tasks:
         file: tasks/core.yml
     # - include: tasks/ssh.yml
-    # - include: tasks/git-setup.yml
     - import_tasks:
-        file: tasks/node-setup.yml
+        file: tasks/git.yml
+    - import_tasks:
+        file: tasks/node.yml
 
     - import_tasks:
         file: tasks/npm-global-packages.yml
