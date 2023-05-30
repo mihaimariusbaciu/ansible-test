@@ -26,6 +26,8 @@
         file: tasks/npm-global-packages.yml
     - import_tasks:
         file: tasks/zsh.yml
+    - import_tasks:
+        file: tasks/dotfiles.yml
     # - include: tasks/zsh-setup.yml
     # - include: tasks/slack-setup.yml
     # - include: tasks/personal-projects.yml
