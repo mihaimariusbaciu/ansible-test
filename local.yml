@@ -22,10 +22,8 @@
         file: tasks/git.yml
     - import_tasks:
         file: tasks/node.yml
-
     - import_tasks:
         file: tasks/npm-global-packages.yml
-
     - import_tasks:
         file: tasks/zsh.yml
     # - include: tasks/zsh-setup.yml
@@ -35,8 +33,8 @@
         file: tasks/nvim.yml
     - import_tasks:
         file: tasks/brave.yml
-    # - import_tasks:
-    #   file: tasks/obsidian.yml
+    - import_tasks:
+        file: tasks/obsidian.yml
     # - include: tasks/debugger.yml
     # - include: tasks/dotfiles.yml
     # - include: tasks/productivity-tools.yml
