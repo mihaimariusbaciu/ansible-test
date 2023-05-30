@@ -8,7 +8,7 @@
   git:
     repo: "git@github.com:mihaimariusbaciu/.dotfiles.git"
     dest: "{{ lookup('env', 'HOME') }}/.local/src/.dotfiles"
-    key_file: "~/.ssh/id_rsa"
+    key_file: "{{ lookup('env', 'HOME') }}/.ssh/id_rsa"
     recursive: yes
     update: yes
     accept_hostkey: yes
