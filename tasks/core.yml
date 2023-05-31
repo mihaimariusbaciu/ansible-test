@@ -33,7 +33,7 @@
 - name: Install Starship
   become: yes
   shell: 
-    cmd: bash ./starship.sh -y
+    cmd: sh ./starship.sh -y
     chdir: /tmp 
 
 # - name: Install Clang
