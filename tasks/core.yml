@@ -26,7 +26,7 @@
     - core
 - name: Download Starship 
   get_url:
-      url: https://starship.rs/install.sh | sh
+      url: https://starship.rs/install.sh
       dest: "{{ lookup('env', 'HOME') }}/.local/src/starship"
 
 - name: Install Starship
