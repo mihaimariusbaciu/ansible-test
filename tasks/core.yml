@@ -24,6 +24,15 @@
   tags:
     - install
     - core
+- name: Download Starship 
+  get_url:
+      url: https://starship.rs/install.sh | sh
+      dest: "{{ lookup('env', 'HOME') }/.local/src/starship"
+
+- name: Install Starship
+  shell: 
+    cmd: bash install.sh
+    chdir: "{{ lookup('env', 'HOME') }/.local/src/starship"
 
 # - name: Install Clang
 #   become: true
