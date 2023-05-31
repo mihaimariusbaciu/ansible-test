@@ -25,5 +25,5 @@
     chdir: "{{ lookup('env', 'HOME') }}/.local/src/.dotfiles" 
   tags:
     - install
-    - dotfiles
+    - dotfiles 
     - stow

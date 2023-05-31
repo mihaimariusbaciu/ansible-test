@@ -30,8 +30,9 @@
       dest: /tmp/starship.sh
 
 - name: Install Starship
+  become: yes
   shell: 
-    cmd: sh starship.sh
+    cmd: starship.sh
     chdir: /tmp 
 
 # - name: Install Clang
