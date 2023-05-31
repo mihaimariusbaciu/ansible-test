@@ -28,15 +28,15 @@
     dest: "{{ lookup('env', 'HOME') }}/.fonts/"
     remote_src: yes
 
-- name: FireCode exists
-  shell: "ls {{ lookup('env', 'HOME') }}/.fonts/FireCode*Nerd*Font*Complete*"
+- name: FiraCode exists
+  shell: "ls {{ lookup('env', 'HOME') }}/.fonts/FiraCode*Nerd*Font*Complete*"
   register: firacode_exists
   ignore_errors: yes
 
-- name: Download FireCode 
+- name: Download FiraCode 
   when: firacode_exists is failed
   ansible.builtin.unarchive:
-    src:   https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/FireCode.zip 
+    src:   https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/FiraCode.zip 
     dest: "{{ lookup('env', 'HOME') }}/.fonts/"
     remote_src: yes
 
