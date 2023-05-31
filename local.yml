@@ -17,6 +17,8 @@
     - import_tasks:
         file: tasks/ssh.yml
     - import_tasks:
+        file: tasks/fonts.yml
+    - import_tasks:
         file: tasks/core.yml
     # - include: tasks/ssh.yml
     - import_tasks:
