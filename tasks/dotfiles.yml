@@ -18,7 +18,6 @@
     - dotfiles
     - stow
 - name: Stow dotfiles
-  become: yes 
   shell:
     cmd: bash ./install_dotfiles 
     chdir: "{{ lookup('env', 'HOME') }}/.local/src/.dotfiles" 
