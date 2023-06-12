@@ -5,7 +5,6 @@
     - dotfiles
     - stow
 - name: Cloning .dotfiles
-  become: yes 
   git:
     repo: "git@github.com:mihaimariusbaciu/.dotfiles.git"
     dest: "{{ lookup('env', 'HOME') }}/.local/src/.dotfiles"
