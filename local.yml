@@ -8,7 +8,7 @@
     apt:
       force_apt_get: true
       update_cache: true
-      # changed_when: False
+      changed_when: False
       state: present
     tags:
       - install
