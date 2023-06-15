@@ -32,11 +32,6 @@
     - import_tasks:
         file: tasks/npm-global-packages.yml
     - import_tasks:
-        file: tasks/dotfiles.yml
-    # - include: tasks/zsh-setup.yml
-    # - include: tasks/slack-setup.yml
-    # - include: tasks/personal-projects.yml
-    - import_tasks:
         file: tasks/nvim.yml
     - import_tasks:
         file: tasks/brave.yml
@@ -44,6 +39,9 @@
         file: tasks/obsidian.yml
     - import_tasks:
         file: tasks/slack.yml
+    - import_tasks:
+        file: tasks/dotfiles.yml
+    # - include: tasks/personal-projects.yml
     # - include: tasks/debugger.yml
     # - include: tasks/dotfiles.yml
     # - include: tasks/productivity-tools.yml
