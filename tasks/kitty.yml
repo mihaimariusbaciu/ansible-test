@@ -7,7 +7,6 @@
     - kitty
 
 - name: Install Kitty
-  become: yes
   shell: 
     cmd: sh ./kitty.sh
     chdir: /tmp 
