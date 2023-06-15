@@ -24,6 +24,8 @@
     - import_tasks:
         file: tasks/git-setup.yml
     - import_tasks:
+        file: tasks/kitty.yml
+    - import_tasks:
         file: tasks/zsh.yml
     - import_tasks:
         file: tasks/node.yml
