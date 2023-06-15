@@ -1,15 +1,7 @@
-- name: Download Kitty 
-  get_url:
-      url: https://sw.kovidgoyal.net/kitty/installer.sh 
-      dest: /tmp/kitty.sh
-  tags:
-    - install 
-    - kitty
-
 - name: Install Kitty
-  shell: 
-    cmd: sh ./kitty.sh
-    chdir: /tmp 
+  become: true
+  apt:
+    name: ["kitty"]
   tags:
     - install 
     - kitty
