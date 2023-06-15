@@ -25,8 +25,8 @@
 #   when: oh_my_stats.stat.exists == False
 #   become_user: someone
 
-# - name: Install zsh-autosuggestions
-#   ansible.builtin.git:
-#     repo: 'https://github.com/zsh-users/zsh-autosuggestions.git'
-#     dest: "~/.oh-my-zsh/plugins/zsh-autosuggestions"
-#   tags: *tags_for_zsh_tasks
+- name: Install zsh-autosuggestions
+  ansible.builtin.git:
+    repo: 'https://github.com/zsh-users/zsh-autosuggestions.git'
+    dest: "~/.oh-my-zsh/plugins/zsh-autosuggestions"
+  tags: *tags_for_zsh_tasks
