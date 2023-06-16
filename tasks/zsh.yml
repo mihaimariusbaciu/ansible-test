@@ -10,7 +10,7 @@
 
 - name: Change shell to zsh for current user
   become: true
-  shell: chsh -s $(which zsh) $(whoami)
+  shell: echo $(whoami); chsh -s $(which zsh) $(whoami)
   tags: *tags_for_zsh_tasks
 
 #- name: Check that the somefile.conf exists
