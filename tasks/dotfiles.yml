@@ -26,3 +26,14 @@
     - install
     - dotfiles 
     - stow
+
+- name: Nvim Install Plugins
+  shell:
+    cmd: nvim -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
+  tags:
+    - install
+    - dotfiles
+    - nvim
+
+
+
