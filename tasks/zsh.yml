@@ -10,7 +10,7 @@
 
 - name: Change shell to zsh for current user
   become: true
-  shell: echo {{ lookup('env', 'USER') }}; chsh -s $(which zsh) $(whoami)
+  shell: chsh -s $(which zsh)  {{ lookup('env', 'USER') }}
   tags: *tags_for_zsh_tasks
 
 #- name: Check that the somefile.conf exists
