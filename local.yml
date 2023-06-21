@@ -36,6 +36,8 @@
     - import_tasks:
         file: tasks/brave.yml
     - import_tasks:
+        file: tasks/docker.yml
+    - import_tasks:
         file: tasks/obsidian.yml
     - import_tasks:
         file: tasks/slack.yml
