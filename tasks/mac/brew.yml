@@ -1,0 +1,4 @@
+# Install formula foo with 'brew' in default path
+- community.general.homebrew:
+    name: homebrew/cask/brave
+    state: present
