@@ -5,4 +5,6 @@
   pre_tasks:
   tasks:
     - import_tasks:
-        file: tasks/mac/brew.yml
+        file: tasks/mac/test.yml
+    # - import_tasks:
+    #     file: tasks/mac/brew.yml
