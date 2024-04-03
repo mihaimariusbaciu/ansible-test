@@ -2,7 +2,6 @@
   vars:
     source_key: "./.ssh/id_github"
     dest_key: "{{ lookup('env', 'HOME') }}/.ssh/id_github"
-  pre_tasks:
   tasks:
     - import_tasks:
         file: tasks/mac/test.yml
