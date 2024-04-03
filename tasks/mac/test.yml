@@ -1,0 +1,5 @@
+- name:  Test Workgin 
+  become: yes
+  shell: 
+    cmd: sh echo $(pwd)
+    chdir: /tmp 
